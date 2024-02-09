@@ -1,0 +1,29 @@
+@import url(../__table/_td/event-details__table_td.css);
+@import url(../__table/_th/event-details__table_th.css);
+@import url(../__table/_span/event-details__table_span.css);
+
+.event-details__table {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+    border-spacing: 0;
+    margin-block-end: 33px;
+}
+
+.event-details__table tr:first-child th {
+    padding-block-start: 0;
+}
+.event-details__table tr:first-child td {
+    padding-block-start: 0;
+}
+
+.event-details__table tr:last-child th {
+    border-bottom: none;
+}
+.event-details__table tr:last-child td {
+    border-bottom: none;
+}

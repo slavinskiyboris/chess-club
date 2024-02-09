@@ -1,0 +1,13 @@
+@import url(../event-details/__container/event-details__container.css);
+@import url(../event-details/__image/event-details__image.css);
+@import url(../event-details/__title/event-details__title.css);
+@import url(../event-details/__span/event-details__span.css);
+@import url(../event-details/__table/event-details__table.css);
+@import url(../event-details/__paragraph/event-details__paragraph.css);
+
+.event-details {
+    display: flex;
+    padding-block-start: 23px;
+    padding-left: 47px;
+    gap: 18px;
+}

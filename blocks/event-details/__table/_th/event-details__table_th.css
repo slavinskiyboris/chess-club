@@ -1,0 +1,16 @@
+.event-details__table_th {
+    opacity: 0.7;
+    text-align: left;
+    border-bottom: 2px solid #D0D0D0;
+    border-right: 2px solid #D0D0D0;
+    font-weight: 400;
+    padding-right: 16px;
+    padding-block-end: 16px;
+    padding-block-start: 14px;
+}
+
+@supports (font-variation-settings: normal) {
+    .event-details__table {
+        font-family: "Golos Text Variable", sans-serif;
+    }
+}

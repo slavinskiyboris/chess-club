@@ -1,0 +1,15 @@
+.event-details__paragraph {
+    color: #3057A2;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+}
+
+@supports (font-variation-settings: normal) {
+    .event-details__paragraph {
+        font-family: "Golos Text Variable", sans-serif;
+    }
+}

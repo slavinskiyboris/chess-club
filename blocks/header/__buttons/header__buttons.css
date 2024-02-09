@@ -1,0 +1,20 @@
+@import url(../__buttons/_about/header__buttons_about.css);
+@import url(../__buttons/_donate/header__buttons_donate.css);
+
+.header__buttons {
+    display: flex;
+    gap: 16px;
+    text-align: center;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+    margin-block-start: 36px;
+}
+
+@supports (font-variation-settings: normal) {
+    .header__buttons {
+        font-family: "Golos Text Variable", sans-serif;
+    }
+}

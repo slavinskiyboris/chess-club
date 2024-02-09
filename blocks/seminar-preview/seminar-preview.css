@@ -5,8 +5,9 @@
 .seminar-preview {
     display: flex;
     gap: 64px;
-
     padding-left: 72px;
     padding-right: 72px;
     margin-block-start: 79px;
+    margin-block-end: 17px;
+    flex-wrap: wrap;
 }

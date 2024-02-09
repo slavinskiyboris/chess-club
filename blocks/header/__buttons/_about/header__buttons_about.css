@@ -1,0 +1,24 @@
+.header__buttons_about {
+    width: 263px;
+    height: 72px;
+    background-color: transparent;
+    border: 2px solid #1F1F1F;;
+    border-radius: 66px;
+    transition: background-color 0.3s;
+    color: #1F1F1F;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+    .header__buttons_about:hover {
+        color: #FFF;
+        background-color: #1F1F1F;;
+    }
+}
+
+@media (hover: none) {
+    .header__buttons_about:active {
+        color: #FFF;
+        background-color: #1F1F1F;;
+    }
+}

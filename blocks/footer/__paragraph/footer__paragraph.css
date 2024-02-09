@@ -1,0 +1,15 @@
+.footer__paragraph {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+
+@supports (font-variation-settings: normal) {
+    .footer__paragraph {
+        font-family: "Golos Text Variable", sans-serif;
+    }
+}

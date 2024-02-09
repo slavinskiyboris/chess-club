@@ -1,0 +1,11 @@
+/*FONTS*/
+@import url(../fonts/fonts.css);
+/*STYLES*/
+@import url(../styles/globals.css);
+@import url(../styles/animations.css);
+@import url(../blocks/page/page.css);
+/*BLOCKS*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/running-line/running-line.css);
+@import url(../blocks/seminar-preview/seminar-preview.css);
+@import url(../blocks/footer/footer.css);

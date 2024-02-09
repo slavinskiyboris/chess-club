@@ -1,0 +1,21 @@
+@import url(../header/__logo/header__logo.css);
+@import url(../header/__title/header__title.css);
+@import url(../header/__text/header__text.css);
+@import url(../header/__paragraph/header__paragraph.css);
+@import url(../header/__span/header__span.css);
+
+.header {
+    padding-block-start: 26px;
+    height: 700px;
+    /*padding-left: 349px;*/
+    padding-left: 72px;
+    background: url("../../images/background.png") no-repeat center;
+    background-size: cover;
+    filter: sepia(30%);
+}
+
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}

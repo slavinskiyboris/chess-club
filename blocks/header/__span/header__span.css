@@ -1,0 +1,6 @@
+.header__span {
+    align-self: center;
+}
+.header__span:last-of-type {
+    align-self: end;
+}

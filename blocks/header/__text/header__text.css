@@ -1,0 +1,7 @@
+.header__text {
+    max-width: 542px;
+    margin-block-start: 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}

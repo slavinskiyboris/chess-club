@@ -1,0 +1,6 @@
+@import url(../footer/__paragraph/footer__paragraph.css);
+
+.footer {
+    padding: 40px 72px 72px;
+    background-color: #E9DED4;
+}

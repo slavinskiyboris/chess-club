@@ -1,0 +1,12 @@
+@import url(../seminar-preview/__image/seminar-preview__image.css);
+@import url(../seminar-preview/__title/seminar-preview__title.css);
+@import url(../seminar-preview/__span/seminar-preview__span.css);
+
+.seminar-preview {
+    display: flex;
+    gap: 64px;
+
+    padding-left: 72px;
+    padding-right: 72px;
+    margin-block-start: 79px;
+}

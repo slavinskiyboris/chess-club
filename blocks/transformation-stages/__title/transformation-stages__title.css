@@ -1,0 +1,11 @@
+.transformation-stages__title {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Merriweather, sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 64.8px */
+    text-transform: uppercase;
+    position: relative;
+}

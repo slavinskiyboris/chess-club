@@ -1,0 +1,18 @@
+.transformation-stages__span {
+    color: #3057A2;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Golos Text", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    line-height: 130%;
+    bottom: 10px;
+    width: 279px;
+    left: 301px;
+}
+@supports (font-variation-settings: normal) {
+    .transformation-stages__span {
+        font-family: "Golos Text Variable", sans-serif;
+    }
+}

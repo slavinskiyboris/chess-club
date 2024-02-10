@@ -11,4 +11,5 @@
     /*background: #E9DED4; !* Цвет фона для контейнера, если нужно *!*/
     overflow: hidden;
     position: relative;
+    max-width: 1284px;
 }

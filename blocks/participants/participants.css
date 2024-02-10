@@ -1,0 +1,14 @@
+@import url(../participants/__buttons/participants__buttons.css);
+@import url(../participants/__container/participants__container.css);
+@import url(../participants/__counter/participants__counter.css);
+@import url(../participants/__description/participants__description.css);
+@import url(../participants/__flex/participants__flex.css);
+@import url(../participants/__image/participants__image.css);
+@import url(../participants/__item/participants__item.css);
+@import url(../participants/__name/participants__name.css);
+@import url(../participants/__span/participants__span.css);
+@import url(../participants/__title/participants__title.css);
+
+.participants {
+
+}

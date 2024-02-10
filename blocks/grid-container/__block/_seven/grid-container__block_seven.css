@@ -1,0 +1,8 @@
+.grid-container__block_seven {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.grid-container .grid-container__block_seven .grid-container__paragraph {
+    max-width: 446px;
+}

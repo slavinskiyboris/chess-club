@@ -1,0 +1,14 @@
+@import url(../grid-container/__block/grid-container__block.css);
+@import url(../grid-container/__item/grid-container__item.css);
+@import url(../grid-container/__numbers/grid-container__numbers.css);
+@import url(../grid-container/__paragraph/grid-container__paragraph.css);
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 394px); /* Создает две колонки с одинаковой шириной */
+    grid-template-rows: 112px 112px 136px;
+    gap: 20px; /* Расстояние между элементами сетки */
+    /*background: #E9DED4; !* Цвет фона для контейнера, если нужно *!*/
+    overflow: hidden;
+    position: relative;
+}

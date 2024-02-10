@@ -1,0 +1,9 @@
+.grid-container__numbers {
+    border-radius: 60px;
+    background: #FFF;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

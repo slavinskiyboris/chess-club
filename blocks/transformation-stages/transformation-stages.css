@@ -1,6 +1,7 @@
 @import url(../transformation-stages/__title/transformation-stages__title.css);
 @import url(../transformation-stages/__span/transformation-stages__span.css);
 @import url(../transformation-stages/__container/transformation-stages__container.css);
+@import url(../transformation-stages/__image/transformation-stages__image.css);
 
 .transformation-stages {
     margin-block-start: 188px;

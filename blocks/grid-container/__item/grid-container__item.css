@@ -1,0 +1,26 @@
+.grid-container__item {
+    background: #E9DED4; /* Цвет фона для элементов сетки */
+
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+
+    background: url("../../../images/121231.png") center;
+    background-size: cover;
+    /*filter: sepia(30%);*/
+    padding: 20px;
+    padding-right: 0;
+
+    display: flex;
+    gap: 16px;
+}
+
+@supports (font-variation-settings: normal) {
+    .grid-container__item {
+        font-family: "Golos Text Variable", sans-serif;
+    }
+}

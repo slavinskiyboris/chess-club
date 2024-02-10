@@ -1,3 +1,5 @@
 .participants__image {
-
+    width: 320px;
+    height: 320px;
+    margin-block-end: 26px;
 }

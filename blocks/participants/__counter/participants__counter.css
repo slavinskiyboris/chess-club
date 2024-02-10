@@ -1,3 +1,15 @@
 .participants__counter {
-
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    align-self: center;
+}
+@supports (font-variation-settings: normal) {
+    .participants__counter {
+        font-family: "Golos Text Variable", sans-serif;
+    }
 }

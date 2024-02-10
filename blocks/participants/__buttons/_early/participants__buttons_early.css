@@ -1,3 +1,27 @@
 .participants__buttons_early {
+    width: 44px;
+    height: 44px;
+    /*background: url("../../../../images/button-left.png") no-repeat center;*/
+    /*background-size: cover;*/
+    background-color: #1F1F1F;
+    border-radius: 50%;
+    border: none;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    -webkit-tap-highlight-color: transparent;
+}
 
+@media (hover: hover) {
+    .participants__buttons_early:hover {
+        background-color: #FBCE51;
+    }
+}
+
+@media (hover: none) {
+    .participants__buttons_early:active {
+        background-color: #FBCE51;
+    }
 }

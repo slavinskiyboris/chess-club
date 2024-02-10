@@ -10,5 +10,9 @@
 @import url(../participants/__title/participants__title.css);
 
 .participants {
+    margin-block-end: 140px;
+}
 
+.none {
+    display: none;
 }

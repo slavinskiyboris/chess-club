@@ -3,5 +3,6 @@
 @import url(../../participants/__buttons/_next/participants__buttons_next.css);
 
 .participants__buttons {
-
+    display: flex;
+    gap: 14px;
 }

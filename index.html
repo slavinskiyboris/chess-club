@@ -14,6 +14,7 @@
     <link rel="apple-touch-icon" href="./images/favicon.png">
 
     <script src="scripts/index.js" defer></script>
+
   </head>
 
   <body class="page">
@@ -24,8 +25,8 @@
         <p class="header__paragraph">Оплатите взнос на&nbsp;телеграммы для&nbsp;организации<br>Международного васюкинского турнира по&nbsp;шахматам</p>
       </div>
       <div class="header__buttons">
-        <button class="header__buttons_donate">Поддержать<br>шахматную мысль</button>
-        <button class="header__buttons_about">Подробнее<br>о&nbsp;турнире</button>
+        <button class="header__buttons_donate" id="button-donate">Поддержать<br>шахматную мысль</button>
+        <button class="header__buttons_about" id="button-about">Подробнее<br>о&nbsp;турнире</button>
       </div>
     </header>
 
@@ -50,14 +51,14 @@
       <!--    Бегающая линия-->
 
       <!--    Лекция-->
-      <article class="seminar-preview">
+      <article class="seminar-preview" id="donate-section">
         <h2 class="seminar-preview__title">Чтобы&nbsp;поддержать Международный&nbsp;васюкинский турнир&nbsp;посетите&nbsp;лекцию&nbsp;на&nbsp;тему:<br><span class="seminar-preview__span">«Плодотворная&nbsp;дебютная&nbsp;идея»</span></h2>
         <img src="images/chess-players.png" alt="Картинка, где люди играю в шахматы" class="seminar-preview__image">
       </article>
       <!--    Лекция-->
 
       <!-- О сеансе -->
-      <article class="event-details">
+      <article class="event-details" id="about-section">
         <img src="images/pensive-chess-player.png" alt="Шахматист думает над ходом" class="event-details__image">
 
         <div class="event-details__container">
@@ -113,21 +114,14 @@
       <!-- Участники -->
       <article class="participants">
         <div class="participants__container">
-          <h2 class="participants__title"></h2>
+          <h2 class="participants__title">Участники турнира</h2>
           <div class="participants__buttons">
-            <button class="participants__buttons_early"></button>
-            <p class="participants__counter">3<span class="participants__span">/6</span></p>
-            <button class="participants__buttons_next"></button>
+            <button class="participants__buttons_early"><img src="svg/left.svg" alt="Стрелка в право"></button>
+            <p class="participants__counter">3 <span class="participants__span">/ 6</span></p>
+            <button class="participants__buttons_next"><img src="svg/right.svg" alt="Стрелка в лево"></button>
           </div>
         </div>
-        <div class="participants__flex">
-          <div class="participants__item">
-            <img src="images/people.png" alt="Фото участника турнира" class="participants__image">
-            <p class="participants__name">Хозе-Рауль Капабланка</p>
-            <p class="participants__description">Чемпион мира по шахматам</p>
-            <button class="participants__buttons_about">Подробнее</button>
-          </div>
-        </div>
+        <div class="participants__flex"></div>
       </article>
       <!-- Участники -->
 
@@ -157,10 +151,10 @@
 
     <template id="participants-template">
       <div class="participants__item">
-        <img src="" alt="" class="participants__image">
+        <img src="images/people.png" alt="Фото участника турнира" class="participants__image">
         <p class="participants__name"></p>
         <p class="participants__description"></p>
-        <button class="participants__about">Подробнее</button>
+        <button class="participants__buttons_about">Подробнее</button>
       </div>
     </template>
   </body>

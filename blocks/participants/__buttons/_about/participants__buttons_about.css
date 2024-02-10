@@ -1,3 +1,35 @@
 .participants__buttons_about {
+    border-radius: 62px;
+    border: 1px solid #3057A2;
+    width: 113px;
+    height: 35px;
+    background-color: transparent;
+    color: #3057A2;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+    transition: background-color 0.3s;
+    -webkit-tap-highlight-color: transparent;
+}
+@supports (font-variation-settings: normal) {
+    .participants__buttons_about {
+        font-family: "Golos Text Variable", sans-serif;
+    }
+}
 
+@media (hover: hover) {
+    .participants__buttons_about:hover {
+        background-color: #3057A2;
+        color: #FFFFFF;
+    }
+}
+
+@media (hover: none) {
+    .participants__buttons_about:active {
+        background-color: #3057A2;
+        color: #FFFFFF;
+    }
 }

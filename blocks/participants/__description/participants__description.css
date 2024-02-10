@@ -1,3 +1,17 @@
 .participants__description {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+    opacity: 0.6;
+    margin-block-end: 20px;
+}
 
+@supports (font-variation-settings: normal) {
+    .participants__description {
+        font-family: "Golos Text Variable", sans-serif;
+    }
 }

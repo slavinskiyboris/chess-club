@@ -11,3 +11,55 @@
     margin-block-end: 17px;
     flex-wrap: wrap;
 }
+
+@media (width >= 1920px) {
+    .seminar-preview{
+        padding-left: 349px;
+    }
+}
+
+@media (width < 768px) {
+    .seminar-preview{
+        padding-left: 24px;
+        gap: 24px;
+        margin-block-start: 48px;
+    }
+    .seminar-preview__span {
+        display: none;
+    }
+    .seminar-preview__her {
+        display: none;
+    }
+}
+
+.seminar-preview__text {
+    display: none;
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Merriweather, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 48.6px */
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.seminar-preview__text_span {
+    display: none;
+    color: #F54932;
+}
+
+
+@media (max-width: 768px) {
+    .seminar-preview__text {
+        display: block;
+        font-size: 28px;
+        order: 3;
+    }
+    .seminar-preview__text_span {
+        display: block;
+        font-size: 28px;
+    }
+
+}

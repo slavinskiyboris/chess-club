@@ -22,3 +22,11 @@
         background-color: #1F1F1F;;
     }
 }
+@media (width < 376px) {
+    .header__buttons_about{
+        width: 335px;
+        height: 45px;
+        background-color: #FFFFFF;
+        border: none;
+    }
+}

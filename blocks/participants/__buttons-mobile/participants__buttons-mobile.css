@@ -1,0 +1,8 @@
+@media (width < 550px) {
+    .participants__buttons-mobile {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        margin-block-start: 58px;
+    }
+}

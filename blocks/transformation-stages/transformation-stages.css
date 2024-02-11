@@ -8,3 +8,15 @@
     padding-left: 72px;
     margin-block-end: 200px;
 }
+
+@media (width >= 1920px) {
+    .transformation-stages{
+        padding-left: 349px;
+    }
+}
+
+@media (width < 768px) {
+    .transformation-stages{
+        padding-left: 24px;
+    }
+}

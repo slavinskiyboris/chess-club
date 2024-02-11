@@ -5,3 +5,9 @@
     flex-direction: column;
     gap: 22px;
 }
+
+@media (width < 376px) {
+    .header__text{
+        margin-block-start: 35px;
+    }
+}

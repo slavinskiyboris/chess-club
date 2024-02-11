@@ -21,3 +21,10 @@
         background-color: #FBCE51;
     }
 }
+
+@media (width < 376px) {
+    .header__buttons_donate{
+        width: 335px;
+        height: 45px;
+    }
+}

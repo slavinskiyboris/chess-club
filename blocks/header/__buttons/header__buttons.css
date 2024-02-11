@@ -18,3 +18,9 @@
         font-family: "Golos Text Variable", sans-serif;
     }
 }
+
+@media (width < 376px) {
+    .header__buttons{
+        flex-direction: column;
+    }
+}

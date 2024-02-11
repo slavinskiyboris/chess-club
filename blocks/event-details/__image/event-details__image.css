@@ -1,4 +1,11 @@
 .event-details__image {
-    width: 639px;
-    height: 563px;
+    max-width: 639px;
+    min-height: 563px;
+}
+
+@media (width < 768px) {
+    .event-details__image{
+        max-width: 368px;
+        min-height: 236px;
+    }
 }

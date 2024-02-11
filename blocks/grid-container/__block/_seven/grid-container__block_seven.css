@@ -1,8 +1,23 @@
-.grid-container__block_seven {
-    grid-column-start: 2;
-    grid-column-end: 4;
+@media (width >= 1366px) {
+    .grid-container__block_seven {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+
+@media (900px <= width < 1336px) {
+    .grid-container__block_seven {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 
 .grid-container .grid-container__block_seven .grid-container__paragraph {
     max-width: 446px;
+}
+
+@media (width < 900px) {
+    .grid-container .grid-container__block_seven .grid-container__paragraph {
+        max-width: 370px;
+    }
 }

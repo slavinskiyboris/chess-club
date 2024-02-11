@@ -11,3 +11,9 @@
         font-family: "Golos Text Variable", sans-serif;
     }
 }
+
+@media (width < 500px) {
+    .event-details__table_td{
+        padding-left: 0;
+    }
+}

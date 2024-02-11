@@ -8,11 +8,28 @@
 @import url(../participants/__name/participants__name.css);
 @import url(../participants/__span/participants__span.css);
 @import url(../participants/__title/participants__title.css);
+@import url(../participants/__buttons-mobile/participants__buttons-mobile.css);
 
 .participants {
     margin-block-end: 140px;
+    padding-right: 72px;
+    padding-left: 72px;
 }
 
 .none {
     display: none;
+}
+
+@media (width >= 1920px) {
+    .participants{
+        padding-left: 150px;
+        padding-right: 150px;
+
+    }
+}
+
+@media (width < 768px) {
+    .participants{
+        padding-left: 24px;
+    }
 }

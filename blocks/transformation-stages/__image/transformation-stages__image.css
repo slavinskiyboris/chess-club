@@ -5,3 +5,24 @@
     bottom: 0;
     right: 0;
 }
+
+@media (width < 1366px) {
+    .transformation-stages__image {
+        left: 470px;
+        bottom: 0;
+    }
+}
+
+@media (width < 900px) {
+    .transformation-stages__image {
+        top: 25px;
+        left: 270px;
+    }
+}
+
+@media (width < 500px) {
+    .transformation-stages__image {
+        top: 0;
+        left: 0;
+    }
+}

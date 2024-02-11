@@ -1,0 +1,7 @@
+@media (width < 550px) {
+    .event-details__flex {
+        display: flex;
+        flex-direction: column;
+        width: 335px;
+    }
+}

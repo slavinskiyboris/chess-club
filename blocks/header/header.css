@@ -7,10 +7,30 @@
 
 .header {
     padding-block-start: 26px;
-    height: 700px;
-    /*padding-left: 349px;*/
+    min-height: 700px;
     padding-left: 72px;
     background: url("../../images/background.png") no-repeat center;
     background-size: cover;
     filter: sepia(30%);
+    position: relative;
+    overflow: hidden;
+}
+
+@media (width >= 1920px) {
+    .header{
+        padding-left: 349px;
+    }
+}
+@media (width < 768px) {
+    .header{
+        padding-left: 19px;
+        padding-block-start: 16px;
+    }
+}
+
+@media (width < 376px) {
+    .header{
+        height: 812px;
+        background-image: url("../../images/bgm.png");
+    }
 }

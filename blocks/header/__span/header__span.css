@@ -4,3 +4,9 @@
 .header__span:last-of-type {
     align-self: end;
 }
+
+@media (width < 376px) {
+    .header__span:last-of-type {
+        align-self: center;
+    }
+}

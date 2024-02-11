@@ -61,7 +61,7 @@ function hiddenCard() {
     const participantCards = document.querySelectorAll('.participants__item');
 
     if (participantCards.length >= 6) {
-        for (let i = 3; i < 6; i++) {
+        for (let i = 1; i < 6; i++) {
             participantCards[i].classList.add('none');
         }
     }

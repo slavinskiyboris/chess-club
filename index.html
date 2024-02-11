@@ -22,17 +22,15 @@
       <img src="svg/logo.svg" alt="Логотип «Клуб Четырех коней»" class="header__logo">
       <div class="header__text">
         <h1 class="header__title">Превратите уездный город<br><span class="header__span">в&nbsp;столицу</span><span class="header__span"> земного&nbsp;шара</span></h1>
-        <p class="header__paragraph">Оплатите взнос на&nbsp;телеграммы для&nbsp;организации<br>Международного васюкинского турнира по&nbsp;шахматам</p>
+        <p class="header__paragraph">Оплатите взнос на&nbsp;телеграммы для&nbsp;организации Международного васюкинского турнира по&nbsp;шахматам</p>
       </div>
       <div class="header__buttons">
-        <button class="header__buttons_donate" id="button-donate">Поддержать<br>шахматную мысль</button>
-        <button class="header__buttons_about" id="button-about">Подробнее<br>о&nbsp;турнире</button>
+        <button class="header__buttons_donate" id="button-donate"><span>Поддержать шахматную мысль</span></button>
+        <button class="header__buttons_about" id="button-about">Подробнее о&nbsp;турнире</button>
       </div>
-    </header>
 
-    <main class="main">
       <!--    Бегающая линия-->
-      <article class="running-line">
+      <article class="running-line top">
         <div class="running-line__text">
           Дело помощи утопающим — дело рук самих утопающих!
           <div class="running-line__circle"></div>
@@ -49,10 +47,15 @@
         </div>
       </article>
       <!--    Бегающая линия-->
+    </header>
+
+    <main class="main">
 
       <!--    Лекция-->
       <article class="seminar-preview" id="donate-section">
-        <h2 class="seminar-preview__title">Чтобы&nbsp;поддержать Международный&nbsp;васюкинский турнир&nbsp;посетите&nbsp;лекцию&nbsp;на&nbsp;тему:<br><span class="seminar-preview__span">«Плодотворная&nbsp;дебютная&nbsp;идея»</span></h2>
+        <h2 class="seminar-preview__title">Чтобы&nbsp;поддержать Международный васюкинский турнир <span class="seminar-preview__her">посетите лекцию на&nbsp;тему:</span><br><span class="seminar-preview__span">«Плодотворная дебютная идея»</span></h2>
+
+        <p class="seminar-preview__text">посетите&nbsp;лекцию на тему:<br><span class="seminar-preview__text_span">«Плодотворная дебютная идея»</span></p>
         <img src="images/chess-players.png" alt="Картинка, где люди играю в шахматы" class="seminar-preview__image">
       </article>
       <!--    Лекция-->
@@ -64,23 +67,23 @@
         <div class="event-details__container">
           <h2 class="event-details__title">и Сеанс <span class="event-details__span">одновременной игры в&nbsp;шахматы на&nbsp;160&nbsp;досках</span> гроссмейстера О.&nbsp;Бендера</h2>
           <table class="event-details__table">
-            <tr>
+            <tr class="event-details__flex">
               <th class="event-details__table_th">Место проведения:</th>
               <td class="event-details__table_td">Клуб «Картонахник»</td>
             </tr>
-            <tr>
+            <tr class="event-details__flex">
               <th class="event-details__table_th">Дата и время мероприятия:</th>
               <td class="event-details__table_td">22 июня 1927 г. в 18:00</td>
             </tr>
-            <tr>
+            <tr class="event-details__flex">
               <th class="event-details__table_th">Стоимость входных билетов:</th>
               <td class="event-details__table_td">20 коп.</td>
             </tr>
-            <tr>
+            <tr class="event-details__flex">
               <th class="event-details__table_th">Плата за игру:</th>
               <td class="event-details__table_td">50 коп.</td>
             </tr>
-            <tr>
+            <tr class="event-details__flex">
               <th class="event-details__table_th">Взнос на телеграммы:</th>
               <td class="event-details__table_td"><span class="event-details__table_span">100 руб.</span>&nbsp;&nbsp;21 руб. 16 коп.</td>
             </tr>
@@ -99,6 +102,7 @@
         </div>
 
         <div class="grid-container">
+          <img src="images/airplane.png" alt="Самолет" class="transformation-stages__image">
           <div class="grid-container__item"><div class="grid-container__numbers">1</div><p class="grid-container__paragraph">Строительство железнодорожной магистрали Москва-Васюки</p></div>
           <div class="grid-container__item"><div class="grid-container__numbers">2</div><p class="grid-container__paragraph">Открытие фешенебельной гостиницы «Проходная пешка»&nbsp;и&nbsp;других&nbsp;небоскрёбов</p></div>
           <div class="grid-container__item grid-container__block_three"><div class="grid-container__numbers">3</div><p class="grid-container__paragraph">Поднятие сельского хозяйства в&nbsp;радиусе на&nbsp;тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div>
@@ -106,7 +110,14 @@
           <div class="grid-container__item"><div class="grid-container__numbers">5</div><p class="grid-container__paragraph">Размещение гаражей для&nbsp;гостевого<br>автотранспорта</div>
           <div class="grid-container__item"><div class="grid-container__numbers">6</div><p class="grid-container__paragraph">Постройка сверхмощной радиостанции для&nbsp;передачи всему миру сенсационных результатов</div>
           <div class="grid-container__item grid-container__block_seven"><div class="grid-container__numbers">7</div><p class="grid-container__paragraph">Создание аэропорта «Большие Васюки» с&nbsp;регулярным отправлением почтовых самолётов и&nbsp;дирижаблей во&nbsp;все&nbsp;концы света, включая Лос-Анжелос и&nbsp;Мельбурн</div>
-          <img src="images/airplane.png" alt="Самолет" class="transformation-stages__image">
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel-slide">
+
+          </div>
+          <button class="carousel-button prev">❮</button>
+          <button class="carousel-button next">❯</button>
         </div>
       </article>
       <!-- Этапы трансформации -->
@@ -122,6 +133,11 @@
           </div>
         </div>
         <div class="participants__flex"></div>
+        <div class="participants__buttons-mobile">
+          <button class="participants__buttons_early"><img src="svg/left.svg" alt="Стрелка в право"></button>
+          <p class="participants__counter">1 <span class="participants__span">/ 6</span></p>
+          <button class="participants__buttons_next"><img src="svg/right.svg" alt="Стрелка в лево"></button>
+        </div>
       </article>
       <!-- Участники -->
 
@@ -155,6 +171,15 @@
         <p class="participants__name"></p>
         <p class="participants__description"></p>
         <button class="participants__buttons_about">Подробнее</button>
+      </div>
+    </template>
+
+    <template id="steps-template">
+      <div class="steps__item">
+        <div class="grid-container__item">
+          <div class="grid-container__numbers">1</div>
+          <p class="grid-container__paragraph">Строительство железнодорожной магистрали Москва-Васюки</p>
+        </div>
       </div>
     </template>
   </body>

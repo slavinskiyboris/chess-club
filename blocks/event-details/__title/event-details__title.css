@@ -10,3 +10,11 @@
     padding-block-start: 26px;
     margin-block-end: 60px;
 }
+
+@media (width < 768px) {
+    .event-details__title{
+        font-size: 28px;
+        padding-left: 20px;
+        margin-block-end: 46px;
+    }
+}

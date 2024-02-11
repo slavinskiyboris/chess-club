@@ -1,4 +1,13 @@
 .seminar-preview__image {
     width: 390px;
     height: 250px;
+    order: 2;
+}
+
+@media (width < 768px) {
+    .seminar-preview__image{
+        order: 2;
+        width: 329px;
+        height: 213px;
+    }
 }

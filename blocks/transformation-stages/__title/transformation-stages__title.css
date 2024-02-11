@@ -9,3 +9,9 @@
     text-transform: uppercase;
     position: relative;
 }
+
+@media (width < 768px) {
+    .transformation-stages__title{
+        font-size: 36px;
+    }
+}

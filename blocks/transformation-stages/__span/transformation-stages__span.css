@@ -16,3 +16,10 @@
         font-family: "Golos Text Variable", sans-serif;
     }
 }
+
+@media (width < 768px) {
+    .transformation-stages__span{
+        display: inline-block;
+        position: static;
+    }
+}

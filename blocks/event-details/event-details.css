@@ -4,10 +4,28 @@
 @import url(../event-details/__span/event-details__span.css);
 @import url(../event-details/__table/event-details__table.css);
 @import url(../event-details/__paragraph/event-details__paragraph.css);
+@import url(../event-details/__flex/event-details__flex.css);
 
 .event-details {
     display: flex;
     padding-block-start: 23px;
     padding-left: 47px;
     gap: 18px;
+}
+
+@media (width >= 1920px) {
+    .event-details{
+        padding-left: 300px;
+    }
+}
+@media (width < 1366px) {
+    .event-details{
+        flex-direction: column;
+    }
+}
+@media (width < 768px) {
+    .event-details{
+        padding-left: 4px;
+        gap: 0;
+    }
 }

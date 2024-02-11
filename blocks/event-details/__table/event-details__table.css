@@ -27,3 +27,9 @@
 .event-details__table tr:last-child td {
     border-bottom: none;
 }
+
+@media (width < 376px) {
+    .event-details__table{
+        padding-left: 16px;
+    }
+}

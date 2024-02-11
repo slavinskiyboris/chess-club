@@ -1,3 +1,9 @@
 .participants__item {
     text-align: center;
 }
+
+@media (width < 768px) {
+    .participants__item{
+        padding-left: 24px;
+    }
+}

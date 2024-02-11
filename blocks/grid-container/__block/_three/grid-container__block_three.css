@@ -1,5 +1,7 @@
-.grid-container__block_three {
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+@media (width >= 1366px) {
+    .grid-container__block_three {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
 }

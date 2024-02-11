@@ -3,3 +3,9 @@
     height: 36px;
     opacity: 0.8;
 }
+
+@media (width < 376px) {
+    .header__logo{
+        width: 213px;
+    }
+}

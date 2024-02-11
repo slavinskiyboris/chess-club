@@ -10,3 +10,10 @@
     align-self: center;
     max-width: 764px;
 }
+
+@media (width < 768px) {
+    .seminar-preview__title{
+        order: 1;
+        font-size: 28px;
+    }
+}

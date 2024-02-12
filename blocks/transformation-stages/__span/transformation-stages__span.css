@@ -2,7 +2,7 @@
     color: #3057A2;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: "Golos Text", sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     position: absolute;
@@ -10,6 +10,7 @@
     bottom: 10px;
     width: 279px;
     left: 301px;
+    text-transform: lowercase;
 }
 @supports (font-variation-settings: normal) {
     .transformation-stages__span {
@@ -21,5 +22,8 @@
     .transformation-stages__span{
         display: inline-block;
         position: static;
+        width: 320px;
+        padding-top: 9px;
+        font-size: 18px;
     }
 }

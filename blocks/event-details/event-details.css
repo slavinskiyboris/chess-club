@@ -5,6 +5,8 @@
 @import url(../event-details/__table/event-details__table.css);
 @import url(../event-details/__paragraph/event-details__paragraph.css);
 @import url(../event-details/__flex/event-details__flex.css);
+@import url(../event-details/__tr/event-details__tr.css);
+@import url(../event-details/__tbody/event-details__tbody.css);
 
 .event-details {
     display: flex;

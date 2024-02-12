@@ -1,0 +1,5 @@
+@media (width < 550px) {
+    .event-details__tr_one {
+        order: 1;
+    }
+}

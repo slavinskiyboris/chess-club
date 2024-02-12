@@ -1,0 +1,5 @@
+@media (width < 550px) {
+    .event-details__tr_five {
+        order: 5;
+    }
+}

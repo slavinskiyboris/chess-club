@@ -12,8 +12,10 @@
     }
 }
 
-@media (width < 500px) {
+@media (width < 550px) {
     .event-details__table_td{
         padding-left: 0;
+        border: none;
+        padding-block-start: 0;
     }
 }

@@ -5,3 +5,8 @@
     /*padding-right: 72px;*/
     margin-block-end: 60px;
 }
+@media (width < 550px) {
+    .participants__container{
+        margin-block-end: 37px;
+    }
+}

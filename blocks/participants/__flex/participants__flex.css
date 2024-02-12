@@ -5,3 +5,11 @@
     justify-content: space-around;
     gap: 20px;
 }
+
+@media (width < 550px) {
+    .participants__flex{
+        justify-content: left;
+        width: 320px;
+        overflow: hidden;
+    }
+}

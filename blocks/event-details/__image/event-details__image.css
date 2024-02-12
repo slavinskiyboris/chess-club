@@ -3,6 +3,11 @@
     min-height: 563px;
 }
 
+@media (376px <= width < 1366px) {
+    .event-details__image{
+        align-self: center;
+    }
+}
 @media (width < 768px) {
     .event-details__image{
         max-width: 368px;

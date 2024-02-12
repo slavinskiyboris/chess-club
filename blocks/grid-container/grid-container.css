@@ -27,3 +27,9 @@
         justify-content: center;
     }
 }
+
+@media (width < 550px) {
+    .grid-container {
+        display: none;
+    }
+}

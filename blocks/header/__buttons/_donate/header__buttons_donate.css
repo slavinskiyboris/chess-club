@@ -6,6 +6,8 @@
     border-radius: 66px;
     transition: background-color 0.3s;
     -webkit-tap-highlight-color: transparent;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @media (hover: hover) {
@@ -19,6 +21,12 @@
     .header__buttons_donate:active {
         color: #1F1F1F;
         background-color: #FBCE51;
+    }
+}
+
+@media (width < 550px) {
+    .header__buttons_donate{
+        padding: 0;
     }
 }
 

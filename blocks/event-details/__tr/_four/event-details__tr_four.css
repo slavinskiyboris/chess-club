@@ -1,0 +1,6 @@
+@media (width < 550px) {
+    .event-details__tr_four {
+        flex-direction: row;
+        order: 3;
+    }
+}

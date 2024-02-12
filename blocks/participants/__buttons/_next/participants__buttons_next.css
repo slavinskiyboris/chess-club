@@ -12,6 +12,7 @@
     align-items: center;
     transition: background-color 0.3s;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 @media (hover: hover) {
     .participants__buttons_next:hover {
@@ -22,5 +23,12 @@
 @media (hover: none) {
     .participants__buttons_next:active {
         background-color: #FBCE51;
+    }
+}
+
+@media (width < 550px) {
+    .participants__buttons_next{
+        width: 36px;
+        height: 36px;
     }
 }

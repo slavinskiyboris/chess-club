@@ -28,8 +28,9 @@
     border-bottom: none;
 }
 
-@media (width < 376px) {
+@media (width < 550px) {
     .event-details__table{
         padding-left: 16px;
+        margin-block-end: 21px;
     }
 }

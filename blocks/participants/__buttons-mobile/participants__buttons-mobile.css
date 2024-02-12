@@ -1,8 +1,12 @@
+.participants__buttons-mobile {
+    display: none;
+}
+
 @media (width < 550px) {
     .participants__buttons-mobile {
         display: flex;
-        gap: 14px;
-        justify-content: center;
+        gap: 10px;
         margin-block-start: 58px;
+        padding-left: 98px;
     }
 }

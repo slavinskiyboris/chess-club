@@ -7,6 +7,8 @@
     transition: background-color 0.3s;
     color: #1F1F1F;
     -webkit-tap-highlight-color: transparent;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 @media (hover: hover) {
@@ -22,6 +24,12 @@
         background-color: #1F1F1F;;
     }
 }
+@media (width < 550px) {
+    .header__buttons_about{
+        padding: 0;
+    }
+}
+
 @media (width < 376px) {
     .header__buttons_about{
         width: 335px;

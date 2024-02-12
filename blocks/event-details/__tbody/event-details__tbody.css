@@ -1,0 +1,7 @@
+@media (width < 550px) {
+    .event-details__tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

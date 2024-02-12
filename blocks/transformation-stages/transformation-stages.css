@@ -17,6 +17,8 @@
 
 @media (width < 768px) {
     .transformation-stages{
-        padding-left: 24px;
+        padding-left: 19px;
+        margin-block-start: 118px;
+        margin-block-end: 126px;
     }
 }

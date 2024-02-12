@@ -1,3 +1,9 @@
 .seminar-preview__span {
     color: #F54932;
 }
+
+@media (width < 768px) {
+    .seminar-preview__span {
+        display: none;
+    }
+}

@@ -15,9 +15,10 @@
     }
 }
 
-@media (width < 500px) {
+@media (width < 550px) {
     .event-details__table_th{
-        padding-right: 0;
+        /*padding-right: 0;*/
         border: none;
+        padding: 0;
     }
 }

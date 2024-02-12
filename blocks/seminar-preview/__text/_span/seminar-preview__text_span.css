@@ -1,0 +1,12 @@
+.seminar-preview__text_span {
+    display: none;
+    color: #F54932;
+}
+
+@media (max-width: 768px) {
+    .seminar-preview__text_span {
+        display: block;
+        font-size: 28px;
+    }
+
+}

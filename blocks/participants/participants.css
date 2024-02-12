@@ -33,3 +33,9 @@
         padding-left: 24px;
     }
 }
+
+@media (width < 550px) {
+    .participants{
+        margin-block-end: 81px;
+    }
+}

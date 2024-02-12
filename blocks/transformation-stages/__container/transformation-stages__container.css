@@ -2,3 +2,8 @@
     max-width: 806px;
     margin-block-end: 54px;
 }
+@media (width < 550px) {
+    .transformation-stages__container {
+        margin-block-end: 139px
+    }
+}

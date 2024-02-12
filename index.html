@@ -13,7 +13,9 @@
     <link rel="icon" href="svg/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/favicon.png">
 
-    <script src="scripts/index.js" defer></script>
+    <script src="./scripts/cards.js" defer></script>
+    <script src="./scripts/steps.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
 
   </head>
 
@@ -25,8 +27,8 @@
         <p class="header__paragraph">Оплатите взнос на&nbsp;телеграммы для&nbsp;организации Международного васюкинского турнира по&nbsp;шахматам</p>
       </div>
       <div class="header__buttons">
-        <button class="header__buttons_donate" id="button-donate"><span>Поддержать шахматную мысль</span></button>
-        <button class="header__buttons_about" id="button-about">Подробнее о&nbsp;турнире</button>
+        <button class="header__buttons_donate" id="button-donate">Поддержать шахматную мысль</button>
+        <button class="header__buttons_about" id="button-about">Подробнее о турнире</button>
       </div>
 
       <!--    Бегающая линия-->
@@ -53,7 +55,7 @@
 
       <!--    Лекция-->
       <article class="seminar-preview" id="donate-section">
-        <h2 class="seminar-preview__title">Чтобы&nbsp;поддержать Международный васюкинский турнир <span class="seminar-preview__her">посетите лекцию на&nbsp;тему:</span><br><span class="seminar-preview__span">«Плодотворная дебютная идея»</span></h2>
+        <h2 class="seminar-preview__title">Чтобы&nbsp;поддержать Международный васюкинский турнир <span class="seminar-preview__item">посетите лекцию на&nbsp;тему:</span><br><span class="seminar-preview__span">«Плодотворная дебютная идея»</span></h2>
 
         <p class="seminar-preview__text">посетите&nbsp;лекцию на тему:<br><span class="seminar-preview__text_span">«Плодотворная дебютная идея»</span></p>
         <img src="images/chess-players.png" alt="Картинка, где люди играю в шахматы" class="seminar-preview__image">
@@ -67,26 +69,28 @@
         <div class="event-details__container">
           <h2 class="event-details__title">и Сеанс <span class="event-details__span">одновременной игры в&nbsp;шахматы на&nbsp;160&nbsp;досках</span> гроссмейстера О.&nbsp;Бендера</h2>
           <table class="event-details__table">
-            <tr class="event-details__flex">
-              <th class="event-details__table_th">Место проведения:</th>
-              <td class="event-details__table_td">Клуб «Картонахник»</td>
-            </tr>
-            <tr class="event-details__flex">
-              <th class="event-details__table_th">Дата и время мероприятия:</th>
-              <td class="event-details__table_td">22 июня 1927 г. в 18:00</td>
-            </tr>
-            <tr class="event-details__flex">
-              <th class="event-details__table_th">Стоимость входных билетов:</th>
-              <td class="event-details__table_td">20 коп.</td>
-            </tr>
-            <tr class="event-details__flex">
-              <th class="event-details__table_th">Плата за игру:</th>
-              <td class="event-details__table_td">50 коп.</td>
-            </tr>
-            <tr class="event-details__flex">
-              <th class="event-details__table_th">Взнос на телеграммы:</th>
-              <td class="event-details__table_td"><span class="event-details__table_span">100 руб.</span>&nbsp;&nbsp;21 руб. 16 коп.</td>
-            </tr>
+            <tbody class="event-details__tbody">
+              <tr class="event-details__flex event-details__tr_one">
+                <th class="event-details__table_th">Место проведения:</th>
+                <td class="event-details__table_td">Клуб «Картонахник»</td>
+              </tr>
+              <tr class="event-details__flex event-details__tr_two">
+                <th class="event-details__table_th">Дата и время мероприятия:</th>
+                <td class="event-details__table_td">22 июня 1927 г. в 18:00</td>
+              </tr>
+              <tr class="event-details__flex event-details__tr_three">
+                <th class="event-details__table_th">Стоимость входных билетов:</th>
+                <td class="event-details__table_td">20 коп.</td>
+              </tr>
+              <tr class="event-details__flex event-details__tr_four">
+                <th class="event-details__table_th">Плата за игру:</th>
+                <td class="event-details__table_td">50 коп.</td>
+              </tr>
+              <tr class="event-details__flex event-details__tr_five">
+                <th class="event-details__table_th">Взнос на телеграммы:</th>
+                <td class="event-details__table_td"><span class="event-details__table_span">100 руб.</span>&nbsp;&nbsp;21 руб. 16 коп.</td>
+              </tr>
+            </tbody>
           </table>
           <p class="event-details__paragraph">По&nbsp;всем вопросам обращаться в&nbsp;администрацию к&nbsp;К.&nbsp;Михельсону</p>
         </div>
@@ -114,10 +118,33 @@
 
         <div class="carousel-container">
           <div class="carousel-slide">
+            <div class="carousel-card">
+              <div class="carousel-container__item"><div class="grid-container__numbers">1</div><p class="grid-container__paragraph">Строительство железнодорожной магистрали Москва-Васюки</p></div>
+              <div class="carousel-container__item"><div class="grid-container__numbers">2</div><p class="grid-container__paragraph">Открытие фешенебельной гостиницы «Проходная пешка»&nbsp;и&nbsp;других небоскрёбов</p></div>
+            </div>
 
+            <div class="carousel-card">
+              <div class="carousel-container__item"><div class="grid-container__numbers">3</div><p class="grid-container__paragraph">Поднятие сельского хозяйства в&nbsp;радиусе на&nbsp;тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div>
+            </div>
+
+            <div class="carousel-card">
+              <div class="carousel-container__item"><div class="grid-container__numbers">4</div><p class="grid-container__paragraph">Строительство дворца для&nbsp;турнира</div>
+              <div class="carousel-container__item"><div class="grid-container__numbers">5</div><p class="grid-container__paragraph">Размещение гаражей для&nbsp;гостевого<br>автотранспорта</div>
+            </div>
+
+            <div class="carousel-card">
+              <div class="carousel-container__item"><div class="grid-container__numbers">6</div><p class="grid-container__paragraph">Постройка сверхмощной радиостанции для&nbsp;передачи всему миру сенсационных результатов</div>
+            </div>
+
+            <div class="carousel-card">
+              <div class="carousel-container__item grid-container__block_seven"><div class="grid-container__numbers">7</div><p class="grid-container__paragraph">Создание аэропорта «Большие Васюки» с&nbsp;регулярным отправлением почтовых самолётов и&nbsp;дирижаблей во&nbsp;все&nbsp;концы света, включая Лос-Анжелос и&nbsp;Мельбурн</div>
+            </div>
           </div>
-          <button class="carousel-button prev">❮</button>
-          <button class="carousel-button next">❯</button>
+        </div>
+        <div class="carousel__buttons">
+          <button class="carousel__buttons_disabled carousel__buttons_prev"><img src="svg/left.svg" alt="Стрелка в право"></button>
+          <div class="carousel-indicators"></div>
+          <button class="carousel__buttons_disabled carousel__buttons_next"><img src="svg/right.svg" alt="Стрелка в лево"></button>
         </div>
       </article>
       <!-- Этапы трансформации -->

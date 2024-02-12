@@ -28,7 +28,7 @@ function updateIndicators(currentSlide) {
 }
 
 const updateCarousel = () => {
-    slides.forEach((slide, index) => {
+    slides.forEach((slide) => {
         slide.style.transform = `translateX(-${currentSlide * 100}%)`;
     });
 

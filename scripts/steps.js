@@ -1,13 +1,11 @@
-// Получаем элементы DOM для карусели
-const slides = document.querySelectorAll('.carousel-container__card'); // Обновленный селектор
+const slides = document.querySelectorAll('.carousel-container__card');
 const prevButton = document.querySelector('.carousel__buttons_prev');
 const nextButton = document.querySelector('.carousel__buttons_next');
-const indicatorsContainer = document.querySelector('.carousel-container__indicators'); // Убедитесь, что этот селектор соответствует вашей разметке
+const indicatorsContainer = document.querySelector('.carousel-container__indicators');
 
 let currentSlide = 0;
 const indicators = [];
 
-// Функция для создания индикаторов
 function createIndicators() {
     for (let i = 0; i < slides.length; i++) {
         const indicator = document.createElement('div');
@@ -20,14 +18,12 @@ function createIndicators() {
     }
 }
 
-// Функция для обновления индикаторов
 function updateIndicators() {
     indicators.forEach((indicator, index) => {
         indicator.classList.toggle('active', index === currentSlide);
     });
 }
 
-// Функция для обновления видимости слайдов и состояния кнопок
 function updateCarousel() {
     slides.forEach((slide) => {
         slide.style.transform = `translateX(-${currentSlide * 100}%)`;
@@ -45,7 +41,6 @@ function updateCarousel() {
     updateIndicators();
 }
 
-// Функция для добавления обработчиков событий к кнопкам
 function attachEventListeners() {
     prevButton.addEventListener('click', () => {
         if (currentSlide > 0) {
@@ -62,11 +57,10 @@ function attachEventListeners() {
     });
 }
 
-// Инициализация карусели
 function initCarousel() {
     createIndicators();
     attachEventListeners();
-    updateCarousel(); // Вызывается для установки начального состояния карусели
+    updateCarousel();
 }
 
 initCarousel();

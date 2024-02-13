@@ -1,0 +1,11 @@
+.effects:focus {
+    outline: none;
+}
+
+.effects:focus-visible {
+    outline: 3px solid #FBCE51;
+}
+
+.effects {
+    transition: outline 0.3s ease;
+}

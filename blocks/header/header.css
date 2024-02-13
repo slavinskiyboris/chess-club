@@ -7,13 +7,28 @@
 
 .header {
     padding-block-start: 26px;
-    min-height: 700px;
+    min-height: 760px;
     padding-left: 72px;
-    background: url("../../images/background.png") no-repeat center;
-    background-size: cover;
+    background: url("../../images/background.png") no-repeat;
+    background-position: -279px 0;
     filter: sepia(30%);
     position: relative;
     overflow: hidden;
+}
+
+@media (width > 1366px) {
+    .header{
+        padding-left: 349px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (width < 1366px) {
+    .header{
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 @media (width >= 1920px) {

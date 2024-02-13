@@ -22,7 +22,10 @@
 
 @media (width < 500px) {
     .transformation-stages__image {
-        top: 0;
-        left: 0;
+        top: 195px;
+        left: 36px;
+        rotate: -3deg;
+        width: 334px;
+        height: 202px;
     }
 }

@@ -1,10 +1,10 @@
 .participants__image {
     width: 320px;
     height: 320px;
-    margin-block-end: 26px;
+    margin-block-end: 22px;
 }
 
-@media (width < 550px) {
+@media (width < 768px) {
     .participants__image{
         width: 244px;
         height: 244px;

@@ -13,6 +13,7 @@
     line-height: 120%; /* 19.2px */
     transition: background-color 0.3s;
     -webkit-tap-highlight-color: transparent;
+    margin-block-end: 5px;
 }
 @supports (font-variation-settings: normal) {
     .participants__buttons_about {

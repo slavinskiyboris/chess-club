@@ -11,6 +11,12 @@
     }
 }
 
+@media (width >= 1920px) {
+    .footer{
+        padding-left: 150px;
+    }
+}
+
 @media (width < 550px) {
     .footer{
         padding-bottom: 60px;

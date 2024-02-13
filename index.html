@@ -27,8 +27,8 @@
         <p class="header__paragraph">Оплатите взнос на&nbsp;телеграммы для&nbsp;организации Международного васюкинского турнира по&nbsp;шахматам</p>
       </div>
       <div class="header__buttons">
-        <button class="header__buttons_donate" id="button-donate">Поддержать шахматную мысль</button>
-        <button class="header__buttons_about" id="button-about">Подробнее о турнире</button>
+        <button class="header__buttons_donate effects" id="button-donate">Поддержать шахматную мысль</button>
+        <button class="header__buttons_about effects" id="button-about">Подробнее о турнире</button>
       </div>
 
       <!--    Бегающая линия-->
@@ -49,6 +49,7 @@
         </div>
       </article>
       <!--    Бегающая линия-->
+
     </header>
 
     <main class="main">
@@ -117,33 +118,34 @@
         </div>
 
         <div class="carousel-container">
-          <div class="carousel-slide">
-            <div class="carousel-card">
+          <img src="images/airplane.png" alt="Самолет" class="transformation-stages__image">
+          <div class="carousel-container__slide">
+            <div class="carousel-container__card">
               <div class="carousel-container__item"><div class="grid-container__numbers">1</div><p class="grid-container__paragraph">Строительство железнодорожной магистрали Москва-Васюки</p></div>
               <div class="carousel-container__item"><div class="grid-container__numbers">2</div><p class="grid-container__paragraph">Открытие фешенебельной гостиницы «Проходная пешка»&nbsp;и&nbsp;других небоскрёбов</p></div>
             </div>
 
-            <div class="carousel-card">
+            <div class="carousel-container__card">
               <div class="carousel-container__item"><div class="grid-container__numbers">3</div><p class="grid-container__paragraph">Поднятие сельского хозяйства в&nbsp;радиусе на&nbsp;тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div>
             </div>
 
-            <div class="carousel-card">
+            <div class="carousel-container__card">
               <div class="carousel-container__item"><div class="grid-container__numbers">4</div><p class="grid-container__paragraph">Строительство дворца для&nbsp;турнира</div>
               <div class="carousel-container__item"><div class="grid-container__numbers">5</div><p class="grid-container__paragraph">Размещение гаражей для&nbsp;гостевого<br>автотранспорта</div>
             </div>
 
-            <div class="carousel-card">
+            <div class="carousel-container__card">
               <div class="carousel-container__item"><div class="grid-container__numbers">6</div><p class="grid-container__paragraph">Постройка сверхмощной радиостанции для&nbsp;передачи всему миру сенсационных результатов</div>
             </div>
 
-            <div class="carousel-card">
+            <div class="carousel-container__card">
               <div class="carousel-container__item grid-container__block_seven"><div class="grid-container__numbers">7</div><p class="grid-container__paragraph">Создание аэропорта «Большие Васюки» с&nbsp;регулярным отправлением почтовых самолётов и&nbsp;дирижаблей во&nbsp;все&nbsp;концы света, включая Лос-Анжелос и&nbsp;Мельбурн</div>
             </div>
           </div>
         </div>
         <div class="carousel__buttons">
           <button class="carousel__buttons_disabled carousel__buttons_prev"><img src="svg/left.svg" alt="Стрелка в право"></button>
-          <div class="carousel-indicators"></div>
+          <div class="carousel-container__indicators"></div>
           <button class="carousel__buttons_disabled carousel__buttons_next"><img src="svg/right.svg" alt="Стрелка в лево"></button>
         </div>
       </article>
@@ -154,16 +156,16 @@
         <div class="participants__container">
           <h2 class="participants__title">Участники турнира</h2>
           <div class="participants__buttons">
-            <button class="participants__buttons_early"><img src="svg/left.svg" alt="Стрелка в право"></button>
+            <button class="participants__buttons_early carousel__button--disabled effects"><img src="svg/left.svg" alt="Стрелка в право"></button>
             <p class="participants__counter">3 <span class="participants__span">/ 6</span></p>
-            <button class="participants__buttons_next"><img src="svg/right.svg" alt="Стрелка в лево"></button>
+            <button class="participants__buttons_next carousel__button--disabled effects"><img src="svg/right.svg" alt="Стрелка в лево"></button>
           </div>
         </div>
         <div class="participants__flex"></div>
         <div class="participants__buttons-mobile">
-          <button class="participants__buttons_early"><img src="svg/left.svg" alt="Стрелка в право"></button>
+          <button class="participants__buttons-mobile_early carousel__button--disabled effects"><img src="svg/left.svg" alt="Стрелка в право"></button>
           <p class="participants__counter">1 <span class="participants__span">/ 6</span></p>
-          <button class="participants__buttons_next"><img src="svg/right.svg" alt="Стрелка в лево"></button>
+          <button class="participants__buttons-mobile_next carousel__button--disabled effects"><img src="svg/right.svg" alt="Стрелка в лево"></button>
         </div>
       </article>
       <!-- Участники -->
@@ -197,7 +199,7 @@
         <img src="images/people.png" alt="Фото участника турнира" class="participants__image">
         <p class="participants__name"></p>
         <p class="participants__description"></p>
-        <button class="participants__buttons_about">Подробнее</button>
+        <button class="participants__buttons_about effects">Подробнее</button>
       </div>
     </template>
   </body>

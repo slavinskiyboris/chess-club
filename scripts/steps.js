@@ -1,70 +1,72 @@
-const slides = document.querySelectorAll('.carousel-card');
+// Получаем элементы DOM для карусели
+const slides = document.querySelectorAll('.carousel-container__card'); // Обновленный селектор
 const prevButton = document.querySelector('.carousel__buttons_prev');
 const nextButton = document.querySelector('.carousel__buttons_next');
-let currentSlide = 0;
+const indicatorsContainer = document.querySelector('.carousel-container__indicators'); // Убедитесь, что этот селектор соответствует вашей разметке
 
-const indicatorsContainer = document.querySelector('.carousel-indicators');
+let currentSlide = 0;
 const indicators = [];
 
-// Создание индикаторов
-for (let i = 0; i < slides.length; i++) {
-    const indicator = document.createElement('div');
-    indicator.classList.add('carousel-indicator');
-    if (i === 0) {
-        indicator.classList.add('active');
+// Функция для создания индикаторов
+function createIndicators() {
+    for (let i = 0; i < slides.length; i++) {
+        const indicator = document.createElement('div');
+        indicator.classList.add('carousel-container__indicators_item');
+        if (i === 0) {
+            indicator.classList.add('active');
+        }
+        indicatorsContainer.appendChild(indicator);
+        indicators.push(indicator);
     }
-    indicatorsContainer.appendChild(indicator);
-    indicators.push(indicator);
 }
 
-function updateIndicators(currentSlide) {
+// Функция для обновления индикаторов
+function updateIndicators() {
     indicators.forEach((indicator, index) => {
-        if (index === currentSlide) {
-            indicator.classList.add('active');
-        } else {
-            indicator.classList.remove('active');
+        indicator.classList.toggle('active', index === currentSlide);
+    });
+}
+
+// Функция для обновления видимости слайдов и состояния кнопок
+function updateCarousel() {
+    slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(-${currentSlide * 100}%)`;
+    });
+
+    const isFirstSlide = currentSlide === 0;
+    const isLastSlide = currentSlide === slides.length - 1;
+
+    prevButton.disabled = isFirstSlide;
+    nextButton.disabled = isLastSlide;
+
+    prevButton.classList.toggle('carousel__buttons_disabled', isFirstSlide);
+    nextButton.classList.toggle('carousel__buttons_disabled', isLastSlide);
+
+    updateIndicators();
+}
+
+// Функция для добавления обработчиков событий к кнопкам
+function attachEventListeners() {
+    prevButton.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+            updateCarousel();
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentSlide < slides.length - 1) {
+            currentSlide++;
+            updateCarousel();
         }
     });
 }
 
-const updateCarousel = () => {
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${currentSlide * 100}%)`;
-    });
-
-    prevButton.disabled = currentSlide === 0;
-    nextButton.disabled = currentSlide === slides.length - 1;
-
-    // Обновляем классы для кнопок, чтобы отображать их как прозрачные, когда они неактивны
-    if (currentSlide === 0) {
-        prevButton.classList.add('carousel__buttons_disabled');
-    } else {
-        prevButton.classList.remove('carousel__buttons_disabled');
-    }
-
-    if (currentSlide === slides.length - 1) {
-        nextButton.classList.add('carousel__buttons_disabled');
-    } else {
-        nextButton.classList.remove('carousel__buttons_disabled');
-    }
-};
-
-prevButton.addEventListener('click', () => {
-    if (currentSlide > 0) {
-        currentSlide--;
-        updateCarousel();
-    }
-    updateIndicators(currentSlide);
-});
-
-nextButton.addEventListener('click', () => {
-    if (currentSlide < slides.length - 1) {
-        currentSlide++;
-        updateCarousel();
-    }
-    updateIndicators(currentSlide);
-});
-
 // Инициализация карусели
-updateCarousel();
-updateIndicators(currentSlide);
+function initCarousel() {
+    createIndicators();
+    attachEventListeners();
+    updateCarousel(); // Вызывается для установки начального состояния карусели
+}
+
+initCarousel();

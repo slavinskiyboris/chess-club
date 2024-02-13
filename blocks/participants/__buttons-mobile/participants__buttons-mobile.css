@@ -1,3 +1,6 @@
+@import url(../../participants/__buttons-mobile/_early/participants__buttons-mobile_early.css);
+@import url(../../participants/__buttons-mobile/_next/participants__buttons-mobile_next.css);
+
 .participants__buttons-mobile {
     display: none;
 }

@@ -1,0 +1,26 @@
+.participants__buttons-mobile_next {
+    width: 36px;
+    height: 36px;
+
+    background-color: #1F1F1F;
+    border-radius: 50%;
+    border: none;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+@media (hover: hover) {
+    .participants__buttons-mobile_next:hover {
+        background-color: #FBCE51;
+    }
+}
+
+@media (hover: none) {
+    .participants__buttons-mobile_next:active {
+        background-color: #FBCE51;
+    }
+}

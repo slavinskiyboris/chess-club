@@ -1,0 +1,4 @@
+.carousel__buttons_disabled:disabled {
+    background-color: rgba(49, 49, 49, 0.2);
+    cursor: default;
+}

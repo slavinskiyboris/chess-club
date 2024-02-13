@@ -22,3 +22,8 @@
         margin-block-end: 126px;
     }
 }
+@media (width < 500px) {
+    .transformation-stages {
+        position: relative;
+    }
+}

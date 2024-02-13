@@ -4,6 +4,7 @@
 @import url(../styles/globals.css);
 @import url(../styles/animations.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/effects/effects.css);
 /*BLOCKS*/
 @import url(../blocks/header/header.css);
 @import url(../blocks/running-line/running-line.css);

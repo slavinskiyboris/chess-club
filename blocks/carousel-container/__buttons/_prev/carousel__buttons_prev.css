@@ -1,0 +1,24 @@
+.carousel__buttons_prev {
+    width: 36px;
+    height: 36px;
+    background-color: #1F1F1F;
+    border-radius: 50%;
+    border: none;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+    .carousel__buttons_prev:hover {
+        background-color: #FBCE51;
+    }
+}
+
+@media (hover: none) {
+    .carousel__buttons_prev:active {
+        background-color: #FBCE51;
+    }
+}

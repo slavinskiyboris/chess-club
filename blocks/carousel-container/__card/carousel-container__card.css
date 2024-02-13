@@ -1,0 +1,16 @@
+.carousel-container__card {
+    color: #313131;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Golos Text", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+    padding-top: 62px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 335px;
+    height: 300px;
+}

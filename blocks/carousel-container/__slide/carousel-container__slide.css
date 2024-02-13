@@ -1,0 +1,4 @@
+.carousel-container__slide {
+    transition: transform 0.5s ease;
+    display: flex;
+}

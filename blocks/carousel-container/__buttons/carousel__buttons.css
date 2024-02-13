@@ -1,0 +1,17 @@
+@import url(../../carousel-container/__buttons/_disabled/carousel__buttons_disabled.css);
+@import url(../../carousel-container/__buttons/_next/carousel__buttons_next.css);
+@import url(../../carousel-container/__buttons/_prev/carousel__buttons_prev.css);
+
+.carousel__buttons {
+    display: none;
+}
+
+@media (width < 550px) {
+    .carousel__buttons {
+        display: flex;
+        /*justify-content: center;*/
+        gap: 16px;
+        padding-left: 79px
+    ;
+    }
+}

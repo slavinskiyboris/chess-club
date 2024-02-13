@@ -1,3 +1,9 @@
+@import url(../carousel-container/__buttons/carousel__buttons.css);
+@import url(../carousel-container/__item/carousel-container__item.css);
+@import url(../carousel-container/__card/carousel-container__card.css);
+@import url(../carousel-container/__indicators/carousel-container__indicators.css);
+@import url(../carousel-container/__slide/carousel-container__slide.css);
+
 .carousel-container {
     width: 335px;
     height: 300px;
@@ -8,123 +14,9 @@
     display: none;
 
 }
-.carousel-card {
-    color: #313131;
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Golos Text", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 24px */
-    padding-top: 62px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 335px;
-    height: 300px;
-}
-
-.carousel-container__item {
-    display: flex;
-    gap: 16px;
-}
-
-.carousel__buttons_prev {
-    width: 36px;
-    height: 36px;
-    background-color: #1F1F1F;
-    border-radius: 50%;
-    border: none;
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-tap-highlight-color: transparent;
-}
-
-@media (hover: hover) {
-    .carousel__buttons_prev:hover {
-        background-color: #FBCE51;
-    }
-}
-
-@media (hover: none) {
-    .carousel__buttons_prev:active {
-        background-color: #FBCE51;
-    }
-}
-
-.carousel__buttons_next {
-    width: 36px;
-    height: 36px;
-    background-color: #1F1F1F;
-    border-radius: 50%;
-    border: none;
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
-    -webkit-tap-highlight-color: transparent;
-}
-@media (hover: hover) {
-    .carousel__buttons_next:hover {
-        background-color: #FBCE51;
-    }
-}
-
-@media (hover: none) {
-    .carousel__buttons_next:active {
-        background-color: #FBCE51;
-    }
-}
-
-.carousel__buttons_disabled:disabled {
-    background-color: rgba(49, 49, 49, 0.2);
-    cursor: default;
-}
-.carousel-slide {
-    transition: transform 0.5s ease;
-    display: flex;
-}
-
-.carousel__buttons {
-    display: none;
-}
 
 @media (width < 550px) {
     .carousel-container {
         display: flex;
     }
-    .carousel__buttons {
-        display: flex;
-        /*justify-content: center;*/
-        gap: 16px;
-        padding-left: 79px
-    ;
-    }
-}
-
-
-.carousel-indicators {
-    display: flex;
-    /*justify-content: center;*/
-    align-items: center;
-}
-
-.carousel-indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #D9D9D9;
-    margin-right: 6px;
-}
-
-.carousel-indicator:last-of-type {
-    margin-right: 0;
-}
-
-.carousel-indicator.active {
-    background-color: #313131;
 }

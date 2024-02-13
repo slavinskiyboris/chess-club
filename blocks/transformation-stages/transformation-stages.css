@@ -22,7 +22,7 @@
         margin-block-end: 126px;
     }
 }
-@media (width < 500px) {
+@media (width < 550px) {
     .transformation-stages {
         position: relative;
     }

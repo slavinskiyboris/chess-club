@@ -19,7 +19,7 @@
     }
 }
 
-@media (width < 376px) {
+@media (width < 426px) {
     .header__buttons{
         flex-direction: column;
     }

@@ -29,7 +29,7 @@ function updateIndicators() {
 
 // Функция для обновления видимости слайдов и состояния кнопок
 function updateCarousel() {
-    slides.forEach((slide, index) => {
+    slides.forEach((slide) => {
         slide.style.transform = `translateX(-${currentSlide * 100}%)`;
     });
 
